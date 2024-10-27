@@ -14,7 +14,7 @@ import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import flixel.tweens.FlxTween;
 import lime.utils.Assets;
-import flixel.system.FlxSound;
+import flixel.sound.FlxSound;
 import flixel.addons.display.FlxBackdrop;
 import flash.display.BlendMode;
 import openfl.utils.Assets as OpenFlAssets;
