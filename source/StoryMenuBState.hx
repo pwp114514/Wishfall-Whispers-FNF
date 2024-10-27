@@ -169,10 +169,12 @@ class StoryMenuBState extends MusicBeatState
 		// bg.setGraphicSize(Std.int(bg.width * 1.175));
 		// bg.updateHitbox();
 		bgDiamonds.updateHitbox();
-		scrollDiamonds = new FlxBackdrop(bgDiamonds.graphic, 60, 60);
+		scrollDiamonds = new FlxBackdrop(bgDiamonds.graphic, XY);
 		scrollDiamonds.blend = BlendMode.ADD;
 		scrollDiamonds.alpha = 0;
 		scrollDiamonds.scrollFactor.set(1, 1);
+		scrollDiamonds.x = 60;
+		scrollDiamonds.y = 60;
 		add(scrollDiamonds);
 		scrollDiamonds.velocity.set(-50, -50);
 		
