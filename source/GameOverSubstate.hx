@@ -10,8 +10,6 @@ import flixel.util.FlxTimer;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.FlxSprite;
-import PlayMedia;
-
 using StringTools;
 
 class GameOverSubstate extends MusicBeatSubstate
