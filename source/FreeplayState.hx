@@ -172,7 +172,7 @@ class FreeplayState extends MusicBeatState
 		// bg.updateHitbox();
 		bgDiamonds.updateHitbox();
 		
-		scrollDiamonds = new FlxBackdrop(bgDiamonds.graphic, 60, 60, true, true);
+		scrollDiamonds = new FlxBackdrop(bgDiamonds.graphic, 60, 60);
 		scrollDiamonds.blend = BlendMode.ADD;
 		scrollDiamonds.alpha = 0.1;
 		scrollDiamonds.scrollFactor.set(1, 1);
