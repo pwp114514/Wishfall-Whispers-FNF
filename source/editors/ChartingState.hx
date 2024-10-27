@@ -410,7 +410,7 @@ class ChartingState extends MusicBeatState
 					lucidEvent = '';
 					file = Paths.json(songName + '/events');
 				}
-			#if sys
+			#if MODES_ALLOWED
 			if (#if MODS_ALLOWED FileSystem.exists(Paths.modsJson(songName + '/events' + lucidEvent)) || #end FileSystem.exists(file))
 			#else
 			if (OpenFlAssets.exists(file))
