@@ -248,7 +248,7 @@ class TitleState extends MusicBeatState
 		bgDiamonds.antialiasing = true;
 		bgDiamonds.updateHitbox();
 		var scrollDiamonds:FlxBackdrop;
-		scrollDiamonds = new FlxBackdrop(bgDiamonds.graphic, 60, 60, true, true);
+		scrollDiamonds = new FlxBackdrop(bgDiamonds.graphic, 60, 60);
 		scrollDiamonds.blend = BlendMode.MULTIPLY;
 		scrollDiamonds.alpha = 0.1;
 		add(scrollDiamonds);
