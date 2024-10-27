@@ -394,7 +394,7 @@ class Paths
 	
 	static public function getTextFromFile(key:String, ?ignoreMods:Bool = false):String
 	{
-		#if sys
+		#if MODE_ALLOWED
 		if (!ignoreMods && FileSystem.exists(mods(key)))
 			return File.getContent(mods(key));
 
@@ -420,7 +420,7 @@ class Paths
 
 	static public function getModDirectories():Array<String> {
 		var list:Array<String> = [];
-		#if sys
+		#if MODS_ALLOWED
 		var modsFolder:String = Paths.mods();
 		if(FileSystem.exists(modsFolder)) {
 			for (folder in FileSystem.readDirectory(modsFolder)) {
