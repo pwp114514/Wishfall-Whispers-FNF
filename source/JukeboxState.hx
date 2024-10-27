@@ -170,7 +170,7 @@ class JukeboxState extends MusicBeatState
 		// bg.updateHitbox();
 		bgDiamonds.updateHitbox();
 		var scrollDiamonds:FlxBackdrop;
-		scrollDiamonds = new FlxBackdrop(bgDiamonds.graphic, 60, 60, true, true);
+		scrollDiamonds = new FlxBackdrop(bgDiamonds.graphic, 60, 60);
 		scrollDiamonds.scrollFactor.set(0, 0);
 		scrollDiamonds.blend = BlendMode.MULTIPLY;
 		scrollDiamonds.alpha = 0.1;
