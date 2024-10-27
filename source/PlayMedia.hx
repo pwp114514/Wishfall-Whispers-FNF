@@ -62,7 +62,7 @@ class PlayMedia extends MusicBeatState // script by 4Axion!!! please credit :)
 		//FlxG.sound.music.stop();
 		//FlxG.sound.playMusic(Paths.menuMusic('Wayward'), 0.7);
 		//remove(leVid); //why you removing something you never added
-		#if desktop
+		#if (desktop || android)
 		if (leVid != null) {
 			leVid.skipVideo();
 		}
