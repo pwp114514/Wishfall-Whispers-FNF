@@ -24,7 +24,6 @@ import flixel.addons.display.FlxBackdrop;
 import flash.display.BlendMode;
 import WeekData;
 import MenuCharacter;
-import CustomWipeTransition;
 import PlayState;
 using StringTools;
 
