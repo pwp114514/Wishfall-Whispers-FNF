@@ -73,7 +73,7 @@ class Main extends Sprite
 
 		Paths.getModFolders();
 		ClientPrefs.startControls();
-		addChild(new FlxGame(gameWidth, gameHeight, initialState, #if desktop zoom #end, framerate, framerate, skipSplash, startFullscreen));
+		addChild(new FlxGame(gameWidth, gameHeight, initialState, #if desktop zoom ,#end framerate, framerate, skipSplash, startFullscreen));
 
 		#if !mobile
 		fpsVar = new FPS(10, 3, 0xFFFFFF);
