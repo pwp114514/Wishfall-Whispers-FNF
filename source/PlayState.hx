@@ -1152,7 +1152,7 @@ class PlayState extends MusicBeatState
 			gf.visible = false;
 		}
 
-		scrollDiamonds = new FlxBackdrop(Paths.image('diamondsLUCID'), 0.2, 0.2, true, true);
+		scrollDiamonds = new FlxBackdrop(Paths.image('diamondsLUCID'), 0.2, 0.2);
 		scrollDiamonds.scrollFactor.set(1, 1);
 		add(scrollDiamonds);
 		scrollDiamonds.velocity.set(-100, -100);
@@ -2161,7 +2161,7 @@ class PlayState extends MusicBeatState
 		trace(file);
 		trace("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
 
-		#if sys
+		#if MODS_ALLOWED
 		if (FileSystem.exists(Paths.modsJson(songName + '/events' + lucidEvent)) || FileSystem.exists(file)) {
 		#else
 		if (OpenFlAssets.exists(file)) {
